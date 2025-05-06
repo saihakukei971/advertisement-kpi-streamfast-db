@@ -1,0 +1,37 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="advertisement-kpi-streamfast-db",
+    version="1.0.0",
+    description="広告KPI（CPA, CVR, CTR等）をCSVで取り込み、SQLiteに登録し、Streamlitで可視化するダッシュボード＋FastAPI連携ツール",
+    author="Your Name",
+    author_email="your.email@example.com",
+    packages=find_packages(),
+    include_package_data=True,
+    install_requires=[
+        "fastapi>=0.100.0",
+        "uvicorn>=0.23.2",
+        "streamlit>=1.26.0",
+        "sqlalchemy>=2.0.20",
+        "pandas>=2.0.3",
+        "numpy>=1.24.4",
+        "plotly>=5.16.1",
+        "python-multipart>=0.0.6",
+        "requests>=2.31.0",
+        "openpyxl>=3.1.2",
+    ],
+    python_requires=">=3.8",
+    classifiers=[
+        "Development Status :: 4 - Beta",
+        "Environment :: Web Environment",
+        "Framework :: FastAPI",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Topic :: Internet :: WWW/HTTP",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+    ],
+)
